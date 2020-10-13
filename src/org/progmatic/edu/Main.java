@@ -17,4 +17,13 @@ public class Main {
         }
         return min;
     }
+    public static int evenNumbers (int[] arr) {
+        int evenNums = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 0) {
+                evenNums++;
+            }
+        }
+        return evenNums;
+    }
 }
