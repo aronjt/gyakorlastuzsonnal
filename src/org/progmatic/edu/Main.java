@@ -27,12 +27,20 @@ public class Main {
         return evenNums;
     }
     public static int max (int[]arr ){
-        int max = int[0];
+        int max = arr[0];
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > max){
                 max = arr[i];
             }
 
         }return max;
+    }
+    public static int oddNumbers(int[] arr){
+        int counter = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 !=0){
+                counter++;
+            }
+        }return counter;
     }
 }
